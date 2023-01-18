@@ -1,15 +1,15 @@
 import pandas as pd
+import numpy as np
 import math 
 import statistics
 import skfuzzy as fuzz
+import scipy.stats
 from matplotlib import pyplot as plt
 from confgi import gaussian_fuzzy_mean , triangular_fuzzy_number , sigma , path_data , membership_function ,alpha ,x
 
 
 
 def draw_figure():
-
-
     if membership_function == 'Gaussian': 
         # gaussmf = fuzz.gaussmf(x, mean, sigma)
         very_low = fuzz.gaussmf(x, gaussian_fuzzy_mean['Very low'], sigma)
@@ -40,10 +40,34 @@ def draw_figure():
     plt.savefig('images/'+name_img+'.png')
     plt.show()
 
+def entropy(df):
 
+    list_of_entropy = []
+    for column in df.columns:
+        data = df[column]
+        p_data = data.value_counts()           # counts occurrence of each value
+        entropy = scipy.stats.entropy(p_data)
+        list_of_entropy.append(entropy)
+    return list_of_entropy
 
+def divide_mean_std(df):
 
-def Fuzzy_delphi_mathod():
+    list_of_standerd_div = []
+    for column in df.columns:
+        data = np.array(df[column])
+        std = np.std(data)
+        mean = np.mean(data)
+        list_of_standerd_div.append(mean/std)
+    return list_of_standerd_div
+def add_consensus_test(df):
+    list_of_entropy = entropy(df)
+    list_of_mean_std = divide_mean_std(df)
+
+    df.loc['mean/std'] = list_of_mean_std
+    df.loc['entropy'] = list_of_entropy
+    df.to_csv('data_with_consensus_test.csv')
+
+def Fuzzy_delphi_mathod(return_data = False):
 
     """Fuzzy delphi ----->>
 
@@ -55,7 +79,7 @@ def Fuzzy_delphi_mathod():
     ######## read file csv ################
     data = pd.read_csv(path_data)
     # remove columns not important
-    data = data.drop(data.columns[0:5], axis=1)
+    data = data.drop(data.columns[0:4], axis=1)
     data = data.drop(data.columns[-2:] ,axis=1)
 
     if membership_function == 'Gaussian':
@@ -75,26 +99,32 @@ def Fuzzy_delphi_mathod():
         for i in range(len(data[column])):
             data[column][i] = statistics.mean(fuzzy_numbers[data[column][i]])
             print(data[column][i])
-    #########
-    Xmax = []
-    ### ------ > store and convert (average score of fuzzy numbers)
-    for column in data.columns:
-        Xmax.append(statistics.mean(data[column]))
+    if return_data:
+        data.to_csv('data.csv')
+        return data
+    else:
 
-    ######### -------- ########
+        #########
+        Xmax = []
+        ### ------ > store and convert (average score of fuzzy numbers)
+        for column in data.columns:
+            Xmax.append(statistics.mean(data[column]))
 
-    list_of_tuples = list(zip(data.columns, Xmax))
-    # Converting lists of tuples into
-    # pandas Dataframe.
-    df = pd.DataFrame(list_of_tuples,
-                    columns=['Item', 'Average score of fuzzy number Xmax)'])
-    
-    output_name = 'output_Gaussian' if membership_function == 'Gaussian' else 'output_Triangular'
+        ######### -------- ########
 
-    df.to_csv(output_name+'.csv')
+        list_of_tuples = list(zip(data.columns, Xmax))
+        # Converting lists of tuples into
+        # pandas Dataframe.
+        df = pd.DataFrame(list_of_tuples,
+                        columns=['Item', 'Average score of fuzzy number Xmax)'])
+        
+        output_name = 'output_Gaussian' if membership_function == 'Gaussian' else 'output_Triangular'
+
+        df.to_csv(output_name+'.csv')
 
 
 
 if __name__ == "__main__" :
-    Fuzzy_delphi_mathod()
-    draw_figure()
+    data = Fuzzy_delphi_mathod(True)
+    add_consensus_test(data)
+    # draw_figure()

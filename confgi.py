@@ -1,10 +1,11 @@
 import numpy as np
 
 
-path_data = 'input_data\Blockchain Adoption in Digital Healthcare 2.csv' 
+path_data = 'input_data\Blockchain Adoption in Digital Healthcare 2 - 15012023 (1).csv' 
+
 
 x = np.arange(0, 1.1, 0.01)
-membership_function = 'Gaussian' # 'Triangular '
+membership_function = 'Gaussian' #'Gaussian' # 'Triangular'
 
 
 # Very low

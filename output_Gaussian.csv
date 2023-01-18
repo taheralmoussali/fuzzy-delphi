@@ -1,0 +1,69 @@
+,Item,Average score of fuzzy number Xmax)
+0,"Providing that Compatibility indicates to the capacity for equipment, systems, applications, or products from several suppliers to work cohesively together without the involvement of an end user. Unrestricted sharing of information and resources is made possible by it. 
+
+Do you think that the impact of Compatibility on the adoption of healthcare is :",0.5066666666666667
+1,"Providing that Security and Privacy indicates to the measures healthcare's ability to protect its patients' privacy and secure their data. 
+
+Do you think that the impact of Security and privacy on the adoption of healthcare is :",0.6266666666666667
+2,"Providing that Latency indicates to the delay that occurs in performing a certain operation in a digital health system and how much the system is adaptable to handle it. 
+Do you think that the impact of Latency on the adoption of healthcare is:",0.48
+3,"Providing that Reliability refers to meeting the robustness and correctness. The former indicates the correct operation of technology in normal conditions, and the latter indicates the proper operation of technology in abnormal conditions. 
+Do you think that the impact of  Reliability on the adoption of healthcare is:",0.6
+4,"Providing that Scalability refers to how much the technology is capable of operating on large scales, such as serving a high number of patients in different regions with different pressure and demand. It is associated with decentralized architecture where the bottleneck is handled. 
+Do you think that the impact of Scalability on the adoption of healthcare is:",0.6533333333333333
+5,"Providing that Limitation of Computing Power refers to the limited resources of devices’ computing power, which prevents the execution of the blockchain operation. 
+Do you think that the impact of Computing Power on the adoption of healthcare is:",0.44
+6,"Providing that Top Management Support assesses the level of senior management engagement, support, and approval for the blockchain initiative. 
+Do you think that the impact of Top Management Support on the adoption of healthcare is:",0.6666666666666666
+7,"Providing Training and Skills measure the level of alleviating the technical skills of the development team involved in blockchain implementation through training and courses. 
+Do you think that the impact of Training and Skills on the adoption of healthcare is:",0.6266666666666667
+8,"Providing that Health IT Strategy measure the level of alignment of the blockchain project with the strategic vision of healthcare IT. 
+Do you think that the impact of the Health IT Strategy on the adoption of healthcare is:",0.6666666666666667
+9,"Providing that Management Stability refers to the status of management in terms of changing the rate of administrative positions and leadership holders. 
+Do you think that the impact of Management Stability on the adoption of healthcare is:",0.5466666666666666
+10,"Providing that Appropriate Team Leadership indicates to suitability of leadership with the position they hold and the matching with the creative aspect that is needed in terms of changing for the better. 
+Do you think that the impact of Appropriate Team Leadership on the adoption of healthcare is:",0.6133333333333333
+11,"Providing that Technology Readiness indicates to the availability of technological infrastructure and IT human resources is needed to implement the technology. 
+Do you think that the impact of Technology Readiness on the adoption of healthcare is:",0.52
+12,"Providing that bureaucracy and reduction the flexibility of changes caused by Hierarchical Structure might impact the adoption of healthcare, 
+Do you think that this impact is :  ",0.32
+13,"Providing that Business Parties’ Willingness represents the seriousness of business parties in transferring their infrastructure to blockchain-based. It has more than one dimension, such as ideology, culture, fear of change …etc. 
+Do you think that the impact of Business Parties’ willingness on the adoption of healthcare is:",0.6933333333333334
+14,"Providing that Business Collaboration and Coordination indicates to the willingness of other business parties to collaborate and coordinate with the healthcare organization that is working on enabling blockchain for its system. 
+Do you think that the impact of Business Collaboration and Coordination on the adoption of healthcare is:",0.6666666666666667
+15,"Providing that Feasible Business Model indicates to the feasibility of accomplishing a blockchain-based platform for healthcare in terms of profitability and applicability.
+Do you think that the impact of Feasible Business Model on the adoption of healthcare is:",0.4266666666666667
+16,"Providing that Paperwork Reduction represents the new technology's contribution to reducing paperwork usage. This factor is essential in adopting blockchain due to the digitization and data sharing that is accomplished by blockchain. 
+Do you think that the impact of Paperwork Reduction on the adoption of healthcare is:",0.3466666666666667
+17,"Providing that Co2 Emission represents the significance of CO2 emission generated from blockchain computing in preventing its adoption.    
+Do you think that the impact of Co2 Emission on the adoption of healthcare is:",0.25333333333333335
+18,"Providing that Resource Wastage  represents the significance of energy consumption needed for operating blockchain in preventing the adoption, considering that energy resources are limited and the priority of blockchain adoption is not at the top when compared with the basic needs of energy for a human being.      
+Do you think that the impact of Resource Wastage on the adoption of healthcare is:",0.3066666666666667
+19,"Providing that Legal Framework measures the available policy and regulation, the easiness of local legislation, and the clarity and maturity of the rules.         
+Do you think that the impact of Legal framework on the adoption of healthcare is:",0.68
+20,"Providing that Regulation Compliance represents the legalization efforts consumed by the healthcare organization in guiding the implementation with fulfilling the legal obligation.
+Do you think that the impact of Regulation Compliance on the adoption of healthcare is:",0.68
+21,"Providing that Budget Availability represents the needed or allocated budget that can cover all types of costs, namely, management claims and operation costs and maintenance costs.
+Do you think that the impact of Budget Availability on the adoption of healthcare is:",0.5333333333333333
+22,"Providing that Financial Risk, this factor measures the ability of healthcare organizations to measure the risk involved in the blockchain project due to the ambiguity and uncertainty considering the low number of similar projects.
+Do you think that the impact of Financial Risk on the adoption of healthcare is:",0.36
+23,"Providing that Long Term Cost Saving measures the benefit of long-term cost savings obtained from the successful implementation of the blockchain project.
+Do you think that the impact of Long Term Cost Saving on the adoption of healthcare is:",0.36000000000000004
+24,"Providing that Training Cost represents the allocated budget for training the resources to upgrade their skills to be capable of proceeding in the development and implementation.
+Do you think that the impact of Training Cost on the adoption of healthcare is:",0.5333333333333333
+25,"Providing that Performance Expectancy refers to the degree to which an individual thinks that utilizing a certain method or system would improve his or her ability to perform at work.
+Do you think that the impact of Performance Expectancy on the adoption of healthcare is:",0.6666666666666667
+26,"Providing that Effort Expectancy refers to the degree of simplicity involved with using the system.
+Do you think that the impact of Effort Expectancy on the adoption of healthcare is:",0.64
+27,"Providing that Social Influence refers to the degree to which an individual perceives that others believe he or she should use the new system.
+Do you think that the impact of Social Influence on the adoption of healthcare is:",0.5466666666666666
+28,"Providing that Trust indicates the behavior of tolerating uncertainty in favor of good expectations of the other party’s intention or will.
+Do you think that the impact of Trust on the adoption of healthcare is:",0.6533333333333333
+29,"Providing that Attitudes indicates feelings and beliefs about the benefits, quality, and effort associated with using the technology.
+Do you think that the impact of Attitudes on the adoption of healthcare is:",0.48000000000000004
+30,"Providing that Perceived Cost is defined as the degree to which a user perceived that it is expensive to utilize a specific technology or system to perform a specific task.
+Do you think that the impact of perceived cost on the adoption of healthcare is:",0.49333333333333335
+31,"Providing that Self-Efficacy, a determination of a person's technological ability for carrying out a specific task or employment.
+Do you think that the impact of Self-Efficacy on the adoption of healthcare is:",0.64
+32,"Providing that Privacy the right to govern the acquisition, use, and dissemination of personally identifiable health data is characterized as an individual's right to privacy.
+Do you think that the impact of Privacy on the adoption of healthcare is:",0.6533333333333333
